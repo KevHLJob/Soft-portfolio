@@ -448,7 +448,7 @@
   
   /*=============== BREAKPOINTS ===============*/
   /* For small devices */
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 450px) {
     .container {
       margin-left: 1rem;
       margin-right: 1rem;
@@ -480,6 +480,14 @@
       width: 332px;
       margin: 3rem auto;
     }
+    .profile__info {
+      column-gap: 2.5rem;
+    }
+    .profile__buttons {
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+    
   }
   
   @media screen and (min-width: 776px) {
