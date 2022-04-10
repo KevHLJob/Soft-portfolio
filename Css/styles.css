@@ -23,7 +23,7 @@
     --body-color: #E6F3FE; /* hsl(var(--hue), 100%, 99%) */
     --container-color: #fff;
   
-    /*========== Font and typography ==========*/
+    /* Font and typography */
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: 'Poppins', sans-serif;
     --h2-font-size: 1.25rem;
@@ -43,7 +43,7 @@
     }
   }
   
-  /*=============== BASE ===============*/
+  /* BASE */
   * {
     box-sizing: border-box;
     padding: 0;
@@ -76,7 +76,7 @@
     height: auto;
   }
   
-  /*=============== THEME ===============*/
+  /* THEME */
   .change-theme {
     position: absolute;
     top: 1.5rem;
@@ -91,7 +91,7 @@
     color: var(--first-color);
   }
   
-  /*========== Variables Dark theme ==========*/
+  /* Variables Dark theme */
   body.dark-theme {
     --title-color: hsl(var(--hue), 12%, 95%);
     --text-color: hsl(var(--hue), 12%, 75%);
@@ -99,10 +99,10 @@
     --container-color: hsl(var(--hue), 24%, 12%);
   }
   
-  /*========== 
+  /*
       Color changes in some parts of 
       the website, in light theme
-  ==========*/
+  */
   .dark-theme .button__gray {
     background-color: var(--container-color);
   }
