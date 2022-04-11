@@ -422,14 +422,42 @@
   }
   
   /*=============== FOOTER ===============*/
-  .footer__copy {
-    display: block;
-    margin: 2.5rem 0 2rem;
-    text-align: center;
-    font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
-  }
+.footer-container{
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    margin-top: 3rem;
+    color: #E6F3FE;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mail{
+    font-size: 500;
+    color: white;
+    
+}
+.copyright p{
+    margin-left: 20px;
+}
+
+.copyright .bx{
+font-size: 25px;
+}
   
+.logo{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: hsl(0,0%,91%);
+  text-transform: uppercase;
+  margin: 0 auto 0 0;
+}
+
+.logo span{
+  color: #12f2fa;
+}
   /*=============== SCROLL BAR ===============*/
   ::-webkit-scrollbar {
     width: .6rem;

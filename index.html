@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.0/swiper-bundle.min.js"
         integrity="sha512-Z24NgOqNs3e9xPPWyVl6bGugynX7N5rIWTiwpvdu2UXIAs8hRXdA7Qdk5EwtxylY/kVL2ie40g4hkClbVTh0iA=="
@@ -16,7 +18,7 @@
 </head>
 
 <body>
-    <!--=============== HEADER ===============-->
+    <!-- HEADER -->
     <header class="profile container">
         <!-- DARK OR LIGHT button -->
         <i class="ri-moon-line change-theme" id="theme-button"></i>
@@ -90,7 +92,7 @@
     <!-- MAIN Start -->
     <main class="main">
         <section class="filters container">
-            <!--=============== Section TABS ===============-->
+            <!-- Section TABS-->
             <ul class="filters__content">
                 <button class="filters__button filter-tab-active" data-target="#projects">
                     Projects
@@ -98,10 +100,11 @@
                 <button class="filters__button" data-target="#skills">
                     Technologies
                 </button>
+                
             </ul>
 
             <div class="filters__sections">
-                <!--=============== PROJECTS ===============-->
+                <!-- PROJECTS -->
                 <div class="projects__content grid filters__active" data-content id="projects">
                     <article class="projects__card">
                         <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
@@ -174,7 +177,7 @@
                         <div class="skills__box">
                             <div class="skills__group">
                                 <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-html5-line"></i>
 
                                     <div>
                                         <h3 class="skills__name">HTML</h3>
@@ -183,8 +186,8 @@
                                 </div>
 
                                 <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-css3-line"></i>
+                                    
                                     <div>
                                         <h3 class="skills__name">CSS</h3>
                                         <span class="skills__level">Intermediate</span>
@@ -203,8 +206,8 @@
 
                             <div class="skills__group">
                                 <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-vuejs-line"></i>
+                                    
                                     <div>
                                         <h3 class="skills__name">Vue.js</h3>
                                         <span class="skills__level">Intermediate</span>
@@ -221,7 +224,8 @@
                                 </div>
 
                                 <div class="skills__data">
-                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-github-line"></i>
+
 
                                     <div>
                                         <h3 class="skills__name">Git</h3>
@@ -304,10 +308,16 @@
     <!-- SKILLS  END-->
     <!-- MAIN END -->
     <!-- FOOTER -->
-    <footer class="footer container">
-        <span class="footer__copy">
-            &#169; KevDev. All rigths reserved
-        </span>
+    <footer class="footer-container">
+        <div class="copyright container">
+            <a href="#" class="logo">KEV<span>DEV</span></a>
+            <p>&#169; Ing. Kevin López Meza</p>
+        </div>
+        <div class="copyright container">
+            <i class='bx bxl-gmail'></i>
+            <p>Correo: kevjob826@gmail.com</p>
+
+        </div>
     </footer>
 
     <!-- SCROLLREVEAL -->
