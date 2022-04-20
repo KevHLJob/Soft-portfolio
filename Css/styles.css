@@ -76,6 +76,7 @@
     height: auto;
   }
   
+  
   /* THEME */
   .change-theme {
     position: absolute;
@@ -146,7 +147,7 @@
   }
   
   .profile__container {
-    row-gap: 2rem;
+    row-gap: 1rem;
   }
   
   .profile__data {
@@ -212,6 +213,10 @@
     color: var(--first-color);
   }
   
+.profile-aboutme{
+  text-align: justify;
+}
+
   .profile__info {
     grid-template-columns: repeat(3, max-content);
     justify-content: center;
@@ -220,8 +225,7 @@
   
   .profile__info-group {
     text-align: center;
-
-    
+    margin-bottom: 0%;
   }
   
   .profile__info-number {
@@ -481,7 +485,9 @@ font-size: 25px;
       margin-left: 1rem;
       margin-right: 1rem;
     }
-  
+    .profile__container {
+      row-gap: 2rem;
+    }
     .profile__info {
       column-gap: 1.5rem;
     }
@@ -500,6 +506,10 @@ font-size: 25px;
       font-size: 0.8rem;
   }
 
+  .profile-aboutme{
+    text-align: justify;
+    font-size: 78%;
+  }
     
   }
   
