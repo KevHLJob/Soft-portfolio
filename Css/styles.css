@@ -308,13 +308,13 @@
     border: none;
     outline: none;
     padding: 1rem;
-    color: #fff;
+    color: #3498db;
     font-size: var(--small-font-size);
     font-family: var(--body-font);
     font-weight: 500;
     border-radius: .75rem;
-    cursor: pointer;
     background-color: transparent;
+    cursor: pointer;
     transition: .3s;
   }
   
