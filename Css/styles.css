@@ -163,6 +163,7 @@
   
   .profile__perfil img {
     width: 75px;
+    height: 90px;
     border-radius: 3rem;
     align-self: center;
   }
@@ -492,6 +493,9 @@ font-size: 25px;
       flex-direction: column;
       row-gap: 1rem;
     }
+    .profile__profession{
+      font-size: 1.2rem;
+    }
     .profile__social-link{
       font-size: 1.7rem;
     }
@@ -508,7 +512,11 @@ font-size: 25px;
 
   .profile-aboutme{
     text-align: justify;
-    font-size: 78%;
+    font-size: 85%;
+  }
+  .profile__perfil img{
+    width: 80px;
+    height: 80px;
   }
     
   }
