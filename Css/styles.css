@@ -497,7 +497,7 @@ font-size: 25px;
       font-size: 1.2rem;
     }
     .profile__social-link{
-      font-size: 1.7rem;
+      font-size: 2rem;
     }
   
     .skills__box {
@@ -518,7 +518,9 @@ font-size: 25px;
     width: 80px;
     height: 80px;
   }
-    
+  .ri-moon-line{
+    font-size: 1.7rem;
+  }
   }
   
   /* For medium devices */
@@ -539,7 +541,6 @@ font-size: 25px;
       flex-direction: column;
       row-gap: 2rem;
     }
-   
   }
   
   @media screen and (min-width: 776px) {
@@ -608,5 +609,11 @@ font-size: 25px;
   
     .footer__copy {
       margin: 4.5rem 0 2.5rem;
+    }
+    .ri-moon-line{
+      font-size: 30px;
+    }
+    .profile__social-link{
+      font-size: 35px;
     }
   }
