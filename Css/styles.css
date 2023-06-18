@@ -105,8 +105,8 @@
     background-color: hsl(var(--hue), 24%, 16%);
   }
   
-  .dark-theme .filters__content {
-    background-color: var(--container-color);
+  .dark-theme .filters__content .filter-tab-active{
+    background-color: #3aa6d4;
   }
   
   .dark-theme::-webkit-scrollbar {
@@ -289,7 +289,7 @@
   /*=============== FILTERS TABS===============*/
   .filters__content {
     margin: 2rem 0 2.5rem;
-    background-color: var(--text-color-lighten);
+    background-color: #d0d7dd;
     padding: .375rem;
     border-radius: .75rem;
     display: flex;
@@ -302,7 +302,7 @@
     border: none;
     outline: none;
     padding: 1rem;
-    color: #3498db;
+    color: #06090a;
     font-size: var(--small-font-size);
     font-family: var(--body-font);
     font-weight: 500;
@@ -312,10 +312,7 @@
     transition: .3s;
   }
   
-  .filters__button:hover {
-    background-color: #3498db;
-    color: #fff;
-  }
+ 
   
   /*=============== PROJECTS ===============*/
   .projects__card {
@@ -395,7 +392,7 @@
   }
   
   .skills__data i {
-    font-size: 1rem;
+    font-size: 3rem;
     color: var(--first-color);
   }
   
@@ -503,6 +500,9 @@ font-size: 25px;
     .skills__box {
       column-gap: 1rem;
     }
+    .skills__data i{
+      font-size: 3rem;
+    }
  .logo{
       font-size: 1rem;
     }
@@ -512,7 +512,7 @@ font-size: 25px;
 
   .profile-aboutme{
     text-align: justify;
-    font-size: 85%;
+    font-size: 90%;
   }
   .profile__perfil img{
     width: 80px;
