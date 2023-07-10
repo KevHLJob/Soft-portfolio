@@ -54,4 +54,28 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+  
 });
+
+//count num projects
+function countUp() {
+  let from = 0;
+  let to = 60;
+  let step = to > from ? 1 : -1;
+  let interval = 65;
+
+  if (from == to) {
+    document.querySelector(".profile__info-number").textContent = from;
+    return;
+  }
+  let counter = setInterval(function () {
+    from += step;
+    document.querySelector(".profile__info-number").textContent = "+"+from;
+
+    if (from == to) {
+      clearInterval(counter);
+    }
+  }, interval);
+}
+//call function
+countUp();
