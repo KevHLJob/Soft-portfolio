@@ -82,7 +82,7 @@ countUp();
 
 //Effect typewriter
 const textDisplay= document.getElementById('profession');
-const profession=['Frontend Developer','Systems Engineer','Data Analyst', 'IT Audit']
+const profession=['Frontend Dev','Engineer','Data Analyst', 'IT Audit']
 let i=0
 let j=0
 let currentProfession= []
