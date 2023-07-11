@@ -23,7 +23,7 @@
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --smaller-font-size: 2rem;
   }
   
   @media screen and (min-width: 968px) {
@@ -185,15 +185,19 @@
   .profile__name {
     font-size: var(--h2-font-size);
   }
-  
   .profile__profession {
     font-size: var(--smaller-font-size);
     font-weight: 500;
     color: var(--text-color);
     margin-bottom: 1rem;
+    font-size: 20px;
   }
-  
-  
+  .name_profession{
+    margin: 0;
+    padding: 0;
+    position: absolute; 
+    text-align: center;
+  }
   .profile__social {
     display: flex;
     justify-content: center;
@@ -232,7 +236,7 @@
   
   .profile__info-description {
     font-size: var(--smaller-font-size);
-    font-weight: 500;
+    font-weight: 600;
   }
   
   .profile__buttons, 
@@ -520,6 +524,13 @@ font-size: 25px;
   }
   .ri-moon-line{
     font-size: 1.7rem;
+  }
+  .profile__data{
+    margin-top: 5rem;
+  }
+  .name_profession{
+  display: flex; 
+  gap: 0.50rem;
   }
   }
   

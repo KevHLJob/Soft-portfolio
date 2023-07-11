@@ -79,3 +79,49 @@ function countUp() {
 }
 //call function
 countUp();
+
+//Effect typewriter
+const textDisplay= document.getElementById('profession');
+const profession=['Frontend Developer','Systems Engineer','Data Analyst', 'IT Audit']
+let i=0
+let j=0
+let currentProfession= []
+let isDeleting=false
+let isEnd=false
+function loop(){
+  isEnd=false
+  textDisplay.innerHTML = currentProfession.join('')
+
+  if (i<profession.length){
+
+    if(!isDeleting && j <= profession[i].length){
+      currentProfession.push(profession[i][j])
+      j++
+    }
+
+    if(isDeleting && j <= profession[i].length){
+      currentProfession.pop(profession[i][j])
+      j--
+    }
+
+    if(j == profession[i].length){
+      isEnd=true
+      isDeleting=true
+    }
+
+    if(isDeleting && j === 0){
+      currentProfession = []
+      isDeleting=false
+      i++
+      if(i == profession.length){
+        i=0
+      }
+    }
+  }
+  //var speed objects profession
+  const speedUp = Math.random()* (80-50) +50
+  const normalSpeed = Math.random()*(300-200) +200
+  const time= isEnd ? 2000: isDeleting ? speedUp: normalSpeed
+  setTimeout(loop, time)
+}
+loop()
