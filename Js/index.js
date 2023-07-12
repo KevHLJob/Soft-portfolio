@@ -1,3 +1,12 @@
+//variable effectProfession
+const textDisplay= document.getElementById('profession');
+const profession=['Frontend Dev','Engineer','Data Analyst', 'IT Audit']
+let i=0
+let j=0
+let currentProfession= []
+let isDeleting=false
+let isEnd=false
+
 /* SECTION TABS */
 const tabs = document.querySelectorAll("[data-target]"),
   tabContents = document.querySelectorAll("[data-content]");
@@ -57,7 +66,7 @@ themeButton.addEventListener("click", () => {
   
 });
 
-//count num projects
+//function count num projects
 function countUp() {
   let from = 0;
   let to = 60;
@@ -77,20 +86,11 @@ function countUp() {
     }
   }, interval);
 }
-//call function
-countUp();
 
-//Effect typewriter
-const textDisplay= document.getElementById('profession');
-const profession=['Frontend Dev','Engineer','Data Analyst', 'IT Audit']
-let i=0
-let j=0
-let currentProfession= []
-let isDeleting=false
-let isEnd=false
-function loop(){
+// function Effect typewriter
+function effectProfession(){
   isEnd=false
-  textDisplay.innerHTML = currentProfession.join('')
+  textDisplay.innerHTML = currentProfession.join('')//view together
 
   if (i<profession.length){
 
@@ -118,10 +118,13 @@ function loop(){
       }
     }
   }
-  //var speed objects profession
+  //var speed objects profession with random
   const speedUp = Math.random()* (80-50) +50
   const normalSpeed = Math.random()*(300-200) +200
   const time= isEnd ? 2000: isDeleting ? speedUp: normalSpeed
-  setTimeout(loop, time)
+  setTimeout(effectProfession, time)
 }
-loop()
+
+//call function
+countUp();
+effectProfession()
