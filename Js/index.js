@@ -1,6 +1,6 @@
 //variable effectProfession
 const textDisplay= document.getElementById('profession');
-const profession=['Frontend Dev','Engineer','Data Analyst', 'IT Audit']
+const profession=['Web','Ingeniero','Datos', 'IT Audit']
 let i=0
 let j=0
 let currentProfession= []
@@ -69,7 +69,7 @@ themeButton.addEventListener("click", () => {
 //function count num projects
 function countUp() {
   let from = 0;
-  let to = 60;
+  let to = 65;
   let step = to > from ? 1 : -1;
   let interval = 65;
 
