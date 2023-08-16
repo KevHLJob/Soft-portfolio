@@ -205,7 +205,6 @@
   }
   
   .profile__social-link {
-    font-size: 1.65rem;
     color: var(--title-color);
     transition: .3s;
   }
@@ -506,7 +505,7 @@ font-size: 25px;
       font-size: 1.2rem;
     }
     .profile__social-link{
-      font-size: 2rem;
+      font-size: 2.7rem;
     }
   
     .skills__box {
